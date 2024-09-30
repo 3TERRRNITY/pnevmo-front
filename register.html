@@ -1,0 +1,605 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Topico - Clean, Minimal E-commerce HTML5 Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/preloader.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/backToTop.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
+        <link rel="stylesheet" href="assets/css/ui-range-slider.css">
+        <link rel="stylesheet" href="assets/css/default.css">
+        <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+        <link rel="stylesheet" href="assets/scss/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <!-- preloader area start -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div id="object"></div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader area end -->
+
+        <!-- back to top start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- back to top end -->
+        
+        <!-- header area start -->
+        <header>
+            <div class="header__area">
+                <div class="header__top d-none d-sm-block">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-lg-6 col-md-5 d-none d-md-block">
+                                <div class="header__action d-flex justify-content-center justify-content-md-start">
+                                    <ul>
+                                        <li><a href="#">194223, г. Санкт-Петербург, ул. Курчатова, д. 6</a></li>
+                                        <li><a href="tel:+78003337066">+7 (800) 333-70-66</a></li>
+                                        <li><a href="tel:+78123216244">+7 (812) 321-62-44</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-7">
+                                <div class="header__action d-flex justify-content-center justify-content-md-end">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> Личный кабинет</a></li>
+                                        <li><a href="#"><i class="far fa-sliders-h"></i> Сравнение</a></li>
+                                        <li><a href="#"> <i class="fal fa-heart"></i> Избранные</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__info">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="header__info-left d-flex justify-content-center justify-content-sm-between align-items-center">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="assets/img/logo/pnevmo_logo.svg" alt="logo"></a>
+                                    </div>
+                                    <!-- <div class="header__hotline align-items-center d-none d-sm-flex  d-lg-none d-xl-flex">
+                                        <div class="header__hotline-icon">
+                                            <i class="far fa-clock"></i>
+                                        </div>
+                                        <div class="header__hotline-info">
+                                            <span>Вреемя работы:</span>
+                                            <h6>ПН-ПТ 09:00 - 20:00</h6>
+                                            <h6>СБ: 09:00 - 18:00</h6>
+                                            <h6>ВС: Выходной</h6>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-9">
+                                <div class="header__info-right">
+                                    <div class="header__search f-left d-none d-sm-block">
+                                        <form action="#">
+                                            <div class="header__search-box">
+                                                <input type="text" placeholder="Найти...">
+                                                <button type="submit">Найти</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                    <div class="cart__mini-wrapper d-none d-md-flex f-right p-relative">
+                                        <a href="javascript:void(0);" class="cart__toggle">
+                                            <span class="cart__total-item">01</span>
+                                        </a>
+                                        <span class="cart__content">
+                                            <span class="cart__my">Моя корзина:</span>
+                                            <span class="cart__total-price">255.00 ₽</span>
+                                        </span>
+                                        <div class="cart__mini">
+                                          <div class="cart__close"><button type="button" class="cart__close-btn"><i class="fal fa-times"></i></button></div>
+                                          <ul>
+                                              <li>
+                                                <div class="cart__title">
+                                                  <h4>Моя корзина</h4>
+                                                  <span>(1 товар в корзине)</span>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="cart__item d-flex justify-content-between align-items-center">
+                                                  <div class="cart__inner d-flex">
+                                                    <div class="cart__thumb">
+                                                      <a href="product-details.html">
+                                                        <img src="assets/img/shop/product/cart/cart-mini-1.jpg" alt="">
+                                                      </a>
+                                                    </div>
+                                                    <div class="cart__details">
+                                                      <h6><a href="product-details.html"> Пистолет продувочный 60A GAV байонет  </a></h6>
+                                                      <div class="cart__price">
+                                                        <span>255.00 ₽</span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="cart__del">
+                                                      <a href="#"><i class="fal fa-trash-alt"></i></a>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="cart__sub d-flex justify-content-between align-items-center">
+                                                  <h6>Итого:</h6>
+                                                  <span class="cart__sub-total">255.00 ₽</span>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <a href="checkout.html" class="t-y-btn w-100 mb-10">Оформить зака</a>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="align-items-center justify-content-between row">
+                            <!-- test start -->
+                            <div class="col-xxl-2 col-xl-3 d-none d-xl-block">
+                                <div class="cat__menu-wrapper">
+                                    <div class="cat-toggle ">
+                                        <button type="button" class="cat-toggle-btn "><i class="fas fa-bars"></i> Каталог</button>
+                                        <div class="cat__menu cat__menu-4">
+                                            <nav id="mobile-menu">
+                                              
+                                                <ul class="side-menu">
+                                                    <li>
+                                                        <a href="product.html" style="font-size: 12px;">Инструменты <i class="far fa-angle-down"></i></a>
+                                                        <ul class="mega-menu">
+                                                            <li><a href="product.html" style="font-size: 12px;">Пневматический инструмент</a>
+                                                                <ul class="mega-item">
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Standard SHop Page</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Shop Right Sidebar</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Shop Left Sidebar</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Shop 3 Column</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Shop 4 Column</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="product.html" style="font-size: 12px;">Скобо- и гвоздезабивные пистолеты</a>
+                                                                <ul class="mega-item">
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Product Details</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Product V2</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Product V3</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Varriable Product</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">External Product</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="product.html" style="font-size: 12px;">Скоба, шпилька, гвоздь. Каталог крепежа</a>
+                                                                <ul class="mega-item">
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">wishlist</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Shopping Cart</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Checkout</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Login</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Register</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="product.html" style="font-size: 12px;">Газовая, пневматическая и пороховая технология прямого монтажа</a>
+                                                                <ul class="mega-item">
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 1</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 2</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 3</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 4</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="product.html" style="font-size: 12px;">Упаковка. Оборудование и крепеж</a>
+                                                                <ul class="mega-item">
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 1</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 2</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 3</a></li>
+                                                                    <li><a href="product-details.html" style="font-size: 12px;">Catagory 4</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>   
+                                                    <li>
+                                                        <a href="product.html" style="font-size: 12px;">Комплектующие
+                                                            <span class="cat-label">hot!</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html" style="font-size: 12px;">Компрессоры
+                                                            <span class="cat-label green">new!</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="product.html" style="font-size: 12px;">Пневматические цилиндры<i class="far fa-angle-down"></i></a>
+                                                        <ul class="submenu" style="top: -135px; height: 225px;">
+                                                            <li><a href="product.html" style="font-size: 12px;">Home appliances</a></li>
+                                                            <li><a href="product.html" style="font-size: 12px;">Technology</a>
+                                                                <ul class="submenu" style="top: -44px; height: 225px;">
+                                                                    <li><a href="product.html" style="font-size: 12px;">Storage devices</a></li>
+                                                                    <li><a href="product.html" style="font-size: 12px;">Monitors</a></li>
+                                                                    <li><a href="product.html" style="font-size: 12px;">Laptops</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="product.html" style="font-size: 12px;">Office equipments</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="hidden-item" style="display: none;"><a href="product.html" style="font-size: 12px;">Распределители</a></li>
+                                                    <li class="hidden-item" style="display: none;"><a href="product.html" style="font-size: 12px;">Измерительно оборудование</a></li>
+                                                    <li class="hidden-item" style="display: none;"><a href="product.html" style="font-size: 12px;">Запорная арматура</a></li>
+                                                    <li class="hidden-item" style="display: none;"><a href="product.html" style="font-size: 12px;">Фитинги</a></li>
+                                                    <li class="hidden-item" style="display: none;"><a href="product.html" style="font-size: 12px;">Вакуум</a></li>
+                                                    <li class="hidden-item" style="display: none;"><a href="product.html" style="font-size: 12px;">Трубки пластиковые</a></li>
+                                                    <li><a href="#" id="toggle-button" style="color: blue; font-size: 12px;">Еще</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- test-end -->
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-3 col-3">
+                            <div class="header__bottom-left d-flex d-xl-block align-items-center">
+                                <div class="side-menu d-xl-none mr-20">
+                                  <button type="button" class="side-menu-btn offcanvas-toggle-btn"><i class="fad fa-bars"></i></button>
+                                </div>
+                                <div class="main-menu d-none d-md-block">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                <a href="index.html">Оплата</a>
+                                            </li>
+                                            <li>
+                                                <a href="product.html">Доставка</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Сервис</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">Партнеры</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Новости</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">Справочныее материалы</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">Контакты</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-lg-3 col-xl-3 d-md-flex d-none f-right justify-content-end p-relative">
+                                <button class="t-y-btn" type="submit">Заказать звонок</button>
+                            </div> -->
+                            <div class="col-xl-2 col-lg-2  col-sm-9  col-9 d-md-none d-lg-block">
+                                <div class="header__bottom-right d-flex justify-content-end">
+                                    <div class="header__lang d-md-none d-lg-block">
+                                        <button class="t-y-btn t-y-btn-border" type="submit">Заказать звонок</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header area end -->
+
+        <!-- offcanvas area start -->
+        <div class="offcanvas__area">
+            <div class="offcanvas__wrapper">
+            <div class="offcanvas__close">
+                <button class="offcanvas__close-btn" id="offcanvas__close-btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="offcanvas__content">
+                <div class="offcanvas__logo mb-40">
+                    <a href="index.html">
+                    <img src="assets/img/logo/logo-black.png" alt="logo">
+                    </a>
+                </div>
+                <div class="offcanvas__search mb-25">
+                    <form action="#">
+                        <input type="text" placeholder="What are you searching for?">
+                        <button type="submit" ><i class="far fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-2 fix"></div>
+                <div class="offcanvas__action">
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- offcanvas area end -->      
+        <div class="body-overlay"></div>
+        <!-- offcanvas area end -->
+
+        <main>
+            
+            <!-- breadcrumb area start -->
+            <section class="breadcrumb__area box-plr-75">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xxl-12">
+                            <div class="breadcrumb__wrapper">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">Register</li>
+                                    </ol>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb area end -->
+
+            <!-- login Area Strat-->
+            <section class="login-area pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="basic-login">
+                                <h3 class="text-center mb-60">Signup From Here</h3>
+                                <form action="#">
+                                    <label for="name">Username <span>**</span></label>
+                                    <input id="name" type="text" placeholder="Enter Username" />
+                                    <label for="email-id">Email Address <span>**</span></label>
+                                    <input id="email-id" type="text" placeholder="Email address..." />
+                                    <label for="pass">Password <span>**</span></label>
+                                    <input id="pass" type="password" placeholder="Enter password..." />
+                                    <div class="mt-10"></div>
+                                    <button class="t-y-btn w-100">Register Now</button>
+                                    <div class="or-divide"><span>or</span></div>
+                                    <a href="login.html" class="t-y-btn t-y-btn-grey w-100">login Now</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- login Area End-->
+ 
+        </main>
+
+        <!-- footer area start -->
+        <footer>
+            <div class="footer__area footer-bg-2 yellow-footer">
+                <div class="footer__top pt-80 pb-40">
+                    <div class="container custom-container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="footer__top-left">
+                                    <div class="row">
+                                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="footer__widget">
+                                                <div class="footer__widget-title mb-45">
+                                                    <div class="footer__logo">
+                                                        <a href="index.html"><img src="assets/img/logo/logo-white.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="footer__widget-content">
+                                                    <div class="footer__hotline footer__hotline-4 d-flex align-items-center mb-30">
+                                                        <div class="icon mr-15">
+                                                            <i class="fal fa-headset"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>Hotline Free 24/24:</h4>
+                                                            <span>(+100) 123 456 7890</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer__info footer__info-4">
+                                                        <ul>
+                                                            <li>
+                                                                <span>Add:  
+                                                                    <a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">Walls Street 68, Mahattan, New York, USA</a>
+                                                                </span>
+                                                            </li>
+                                                            <li><span>Email: <a href="mailto:info@thebuesky.com">info@thebuesky.com</a>  </span></li>
+                                                            <li><span>Fax: <a href="tel:123-456-7890">(+100) 123 456 7890</a> - <a href="tel:-100-123-456-7891">(+100) 123 456 7891</a> </span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                    <div class="footer__widget">
+                                                        <div class="footer__widget-title footer__widget-title-4">
+                                                            <h4>Information</h4>
+                                                        </div>
+                                                        <div class="footer__widget-content">
+                                                            <div class="footer__link footer__link-4">
+                                                                <ul>
+                                                                    <li><a href="#"> Custom Service </a></li>
+                                                                    <li><a href="#">F.A.Q.’s</a></li>
+                                                                    <li><a href="#">Ordering Tracking</a></li>
+                                                                    <li><a href="#"> Contacts</a></li>
+                                                                    <li><a href="#">Events</a></li>
+                                                                    <li><a href="#">Popular</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                    <div class="footer__widget">
+                                                        <div class="footer__widget-title footer__widget-title-4">
+                                                            <h4>Our Services</h4>
+                                                        </div>
+                                                        <div class="footer__widget-content">
+                                                            <div class="footer__link footer__link-4">
+                                                                <ul>
+                                                                    <li><a href="#">Sitemap</a></li>
+                                                                    <li><a href="#">Privacy Policy</a></li>
+                                                                    <li><a href="#">Your Account</a></li>
+                                                                    <li><a href="#">Advanced Search</a></li>
+                                                                    <li><a href="#">Terms & Condition</a></li>
+                                                                    <li><a href="#"> Contact Us</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6">
+                                      <div class="row">
+                                        <div class="col-xl-6 col-lg-6">
+                                          <div class="footer__widget">
+                                              <div class="footer__widget-title footer__widget-title-4">
+                                                  <h4>My Account</h4>
+                                              </div>
+                                              <div class="footer__widget-content">
+                                                  <div class="footer__link footer__link-4">
+                                                      <ul>
+                                                          <li><a href="#"> About us </a></li>
+                                                          <li><a href="#">Delivery Information</a></li>
+                                                          <li><a href="#">Privacy Policy</a></li>
+                                                          <li><a href="#">Discount</a></li>
+                                                          <li><a href="#">Custom Service</a></li>
+                                                          <li><a href="#">Terms & Condition</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6">
+                                          <div class="footer__widget">
+                                              <div class="footer__widget-title footer__widget-title-4">
+                                                  <h4>Payment & Shipping</h4>
+                                              </div>
+                                              <div class="footer__widget-content">
+                                                  <div class="footer__link footer__link-4">
+                                                      <ul>
+                                                          <li><a href="#">Terms Of Use</a></li>
+                                                          <li><a href="#">Payment Methods</a></li>
+                                                          <li><a href="#">Shipping Guide</a></li>
+                                                          <li><a href="#">Locations We Ship To</a></li>
+                                                          <li><a href="#">Estimated Delivery Time</a></li>
+                                                          <li><a href="#">Express</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6">
+                                      <div class="footer__widget">
+                                          <div class="footer__widget-title">
+                                              <h4>Sign Up For Newsletter</h4>
+                                          </div>
+                                          <div class="footer__widget-content">
+                                              <div class="footer__subscribe">
+                                                <p> <span>Join 40.00+ Subscribers</span> and get a new discount coupon on every Saturday.</p>
+                                                <div class="footer__subscribe-form">
+                                                  <form action="#">
+                                                    <input type="email" placeholder="Your Email Address...">
+                                                    <button type="submit">subscribe</button>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright footer__copyright-2 pt-30 pb-35 footer-bg-2">
+                    <div class="container custom-container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="footer__copyright-text footer__copyright-text-2">
+                                    <p>Copyright © <a href="index.html">Topico.</a> All Rights Reserved. <a href="#">ThemePure.</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="footer__payment f-right">
+                                    <a href="#" class="m-img"><img src="assets/img/icon/payment.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area end -->
+
+		<!-- JS here -->
+        <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/waypoints.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/meanmenu.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/backToTop.js"></script>
+        <script src="assets/js/jquery.fancybox.min.js"></script>
+        <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/nice-select.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/magnific-popup.min.js"></script>
+        <script src="assets/js/jquery-ui-slider-range.js"></script>
+        <script src="assets/js/ajax-form.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            const hiddenItems = document.querySelectorAll('.hidden-item');
+            const toggleButton = document.getElementById('toggle-button');
+            let isVisible = false; 
+        
+            toggleButton.addEventListener('click', function (event) {
+                event.preventDefault(); 
+                isVisible = !isVisible; 
+        
+                hiddenItems.forEach(item => {
+                    item.style.display = isVisible ? 'block' : 'none'; // Изменяем стиль display в зависимости от состояния
+                });
+        
+                // Меняем текст кнопки в зависимости от состояния
+                toggleButton.textContent = isVisible ? 'Скрыть' : 'Еще';
+            });
+        </script>
+    </body>
+</html>
