@@ -27,29 +27,28 @@
         <link rel="stylesheet" href="assets/scss/main.css">
         <style>
             #grid-container {
-                grid-template-columns: repeat(4, 1fr);
+              display: grid;
+              grid-template-columns: repeat(4, 1fr); /* Десктоп */
+              gap: 4px;
+              max-width: 1600px;
             }
-        
-            
-        
-            @media (max-width: 1024px) {
-                #grid-container {
-                    grid-template-columns: repeat(3, 1fr); 
-                }
+          
+            @media screen and (max-width: 1024px) {
+              #grid-container {
+                grid-template-columns: repeat(2, 1fr); /* Планшеты */
+              }
             }
-        
-            @media (max-width: 768px) {
-                #grid-container {
-                    grid-template-columns: repeat(2, 1fr); 
-                }
+          
+            @media screen and (max-width: 768px) {
+              #grid-container {
+                grid-template-columns: repeat(1, 1fr); /* Мобильные устройства */
+              }
+          
+              span {
+                height: auto; /* Автоматическая высота для мобильных */
+              }
             }
-        
-            @media (max-width: 480px) {
-                #grid-container {
-                    grid-template-columns: 1fr; 
-                }
-            }
-        </style>
+          </style>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -380,16 +379,16 @@
                                     
                                     <div class="tab-content" id="productGridTabContent">
                                         <div class="tab-pane fade  show active" id="FourCol" role="tabpanel" aria-labelledby="FourCol-tab">
-                                            <div class="row">
+                                            <div class="row" style="margin: 0 24px;">
                                                 <div 
-                                                    style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8;" 
+                                                    style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8;" 
                                                     onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                     onmouseout="this.style.borderColor='#edeef8'" 
                                                     onclick="toggleContainer(this)">
                                                     <a href="product-details.html" style="color: #000; text-decoration: underline;">Пневматический инструмент</a>
                                                     <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                 </div>      
-                                                <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                         <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                               onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                               onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -465,14 +464,14 @@
                                                 </div>
 
                                                 <div  
-                                                    style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                    style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                     onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                     onmouseout="this.style.borderColor='#edeef8'" 
                                                     onclick="toggleContainer(this)">
                                                     <a href="product-details.html" style="color: #000; text-decoration: underline;">Скобо- и гвоздезабивные пистолеты</a>
                                                     <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                 </div>      
-                                                <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                         <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                               onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                               onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -572,14 +571,14 @@
                                                 </div>
 
                                                 <div  
-                                                    style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                    style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                     onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                     onmouseout="this.style.borderColor='#edeef8'" 
                                                     onclick="toggleContainer(this)">
                                                     <a href="product-details.html" style="color: #000; text-decoration: underline;">Скоба, шпилька, гвоздь. Каталог крепежа</a>
                                                     <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                 </div>      
-                                                <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                         <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                             onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                             onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -673,14 +672,14 @@
                                                 </div>
 
                                                 <div  
-                                                    style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                    style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                     onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                     onmouseout="this.style.borderColor='#edeef8'" 
                                                     onclick="toggleContainer(this)">
                                                     <a href="product-details.html" style="color: #000; text-decoration: underline;">Газовая, пневматическая и пороховая технология прямого монтажа</a>
                                                     <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                 </div>      
-                                                <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                         <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                             onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                             onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -696,14 +695,14 @@
                                                 </div>
 
                                                 <div  
-                                                    style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                    style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                     onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                     onmouseout="this.style.borderColor='#edeef8'" 
                                                     onclick="toggleContainer(this)">
                                                     <a href="product-details.html" style="color: #000; text-decoration: underline;">Упаковка. Оборудование и крепеж</a>
                                                     <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                 </div>      
-                                                <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                         <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                             onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                             onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -737,14 +736,14 @@
                                                     </div>
 
                                                     <div  
-                                                        style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                        style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                         onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                         onmouseout="this.style.borderColor='#edeef8'" 
                                                         onclick="toggleContainer(this)">
                                                         <a href="product-details.html" style="color: #000; text-decoration: underline;">Абразивные материалы</a>
                                                         <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                     </div>      
-                                                    <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                    <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                             <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                                 onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                                 onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -838,14 +837,14 @@
                                                     </div>
 
                                                     <div  
-                                                        style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                        style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                         onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                         onmouseout="this.style.borderColor='#edeef8'" 
                                                         onclick="toggleContainer(this)">
                                                         <a href="product-details.html" style="color: #000; text-decoration: underline;">Компрессоры, комплектующие для компрессоров</a>
                                                         <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                     </div>      
-                                                    <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                    <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                             <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                                 onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                                 onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
@@ -897,14 +896,14 @@
                                                         </div>
 
                                                         <div  
-                                                            style="width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
+                                                            style="max-width: 1600px; width: 100%; cursor: pointer; font-size: 18px; display: flex; justify-content: space-between; align-items: center; padding: 12px; border: 2px solid #edeef8; background-color: #edeef8; margin-top: 8px;" 
                                                             onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                             onmouseout="this.style.borderColor='#edeef8'" 
                                                             onclick="toggleContainer(this)">
                                                             <a href="product-details.html" style="color: #000; text-decoration: underline;">Пневматические цилиндры и принадлежности</a>
                                                             <i id="toggle-icon" class="fa fa-minus" style="text-decoration: none !important;"></i>
                                                         </div>      
-                                                        <div id="grid-container" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 4px 0 !important;">
+                                                        <div id="grid-container" style="gap: 4px; padding: 4px 0 !important;">
                                                                 <span style="display: grid; grid-template-columns: 0.25fr 1.75fr; gap: 8px; width: 100%; height: 80px; border: 2px solid #edeef8;; padding: 12px; text-decoration: underline; transition: border-color 0.3s;" 
                                                                     onmouseover="this.style.borderColor='blue'; this.style.textDecoration='none';" 
                                                                     onmouseout="this.style.borderColor='#edeef8'; this.style.textDecoration='underline';">
