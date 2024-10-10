@@ -26,6 +26,61 @@
         <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
         <link rel="stylesheet" href="assets/scss/main.css">
         <link rel="stylesheet" href="assets/css/fotorama.css">
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                margin: 0 auto;
+                @media (max-width: 1220px ){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+            .image-container {
+                max-width: 520px;
+
+                @media (max-width: 1390px ){
+                    max-width: 420px
+                }
+                @media (max-width: 1220px ){
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                @media (max-width: 540px ){
+                    margin: 0;
+                }
+            }
+
+            .detail-item {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+               
+            }
+            .dotted-separator {
+                flex-grow: 1; 
+                border-bottom: 1px dashed #666;
+                margin: 0 10px; 
+            }   
+            .grid-item {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .responsive-img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+        </style>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -373,18 +428,54 @@
             <!-- product area start -->
             <section class="product__area box-plr-75 pb-70">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                            <div class="fotorama m-auto"  data-maxwidth="100%">
-                                <img src="https://pnevmo-elektro.ru/upload/resize_cache/ram.watermark/12a/c72/f44/20186/00fe35dca8d647ffd0ff6b6eb0102e5d.jpg">
-                                <img src="https://pnevmo-elektro.ru/upload/resize_cache/ram.watermark/12a/c72/f44/20186/00fe35dca8d647ffd0ff6b6eb0102e5d.jpg">
-                              </div>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="fotorama image-container">
+                                <img class="responsive-img" src="https://pnevmo-elektro.ru/upload/resize_cache/ram.watermark/12a/c72/f44/20186/00fe35dca8d647ffd0ff6b6eb0102e5d.jpg">
+                                <img class="responsive-img" src="https://pnevmo-elektro.ru/upload/resize_cache/ram.watermark/12a/c72/f44/20186/00fe35dca8d647ffd0ff6b6eb0102e5d.jpg">
+                            </div>
                         </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6">
+                    
+                        <div class="grid-item">
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div class="detail-item">
+                                    <div>Производитель/Торговая марка</div>
+                                    <div class="dotted-separator"></div>
+                                    <div>Shinano</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div>Диаметр диска, мм</div>
+                                    <div class="dotted-separator"></div>
+                                    <div>180</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div>Скорость свободного вращения, об/мин</div>
+                                    <div class="dotted-separator"></div>
+                                    <div>4500</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div>Гарантия</div>
+                                    <div class="dotted-separator"></div>
+                                    <div>1 год</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div>Мощность, Вт</div>
+                                    <div class="dotted-separator"></div>
+                                    <div>458</div>
+                                </div>
+                                <div class="detail-item">
+                                    <div>Вес, кг</div>
+                                    <div class="dotted-separator"></div>
+                                    <div>2,1</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="grid-item">
                             <div class="product__details-wrapper">
                                 <div class="product__details">
                                     <h3 class="product__details-title">
-                                        <a href="product-details.html">Компрессор REMEZA 200LB40 поршневой всас.530л/мин 380В</a>
+                                        <a href="product-details.html">Пневматическая УШМ Shinano SI-2351 180мм 4500об/мин 458Вт 2,1кг </a>
                                     </h3>
                                     <div class="product__review d-sm-flex">
                                         <div class="rating rating__shop mb-15 mr-35">
@@ -397,31 +488,32 @@
                                             </ul>
                                         </div>
                                         <div class="product__add-review mb-15">
-                                        <span><a href="#">1 Отзыв</a></span>
-                                        <span><a href="#">Добавить отзыв</a></span>
+                                            <span><a href="#">1 Отзыв</a></span>
+                                            <span><a href="#">Добавить отзыв</a></span>
                                         </div>
                                     </div>
                                     <div class="product__price">
-                                        <span class="new">90 760₽</span>
+                                        <span class="new">26 700 ₽</span>
                                         <span class="old">110 000₽</span>
                                     </div>
                                     <div class="product__stock">
                                         <span>Наличие:</span>
-                                        <span>В наличие</span>
+                                        <span>В наличии</span>
                                     </div>
                                     <div class="product__stock sku mb-30">
                                         <span>Артикул:</span>
-                                        <span>200LB40</span>
+                                        <span> SI-2351</span>
                                     </div>
                                     <div class="product__details-des mb-30">
-                                        <p>Компрессор REMEZA 200LB40 поршневой всас.530л/мин 380В 3кВт 145кг 1460 x 640 x 1150</p>
+                                        <p>Пневматическая УШМ Shinano SI-2351 180мм 4500об/мин 458Вт 2,1кг</p>
                                     </div>
-
                                     <div class="product__details-quantity mb-20">
                                         <form action="#">
                                             <div class="pro-quan-area d-lg-flex align-items-center">
                                                 <div class="product-quantity mr-20 mb-25">
-                                                    <div class="cart-plus-minus p-relative"><input type="text" value="1" /></div>
+                                                    <div class="cart-plus-minus p-relative">
+                                                        <input type="text" value="1" />
+                                                    </div>
                                                 </div>
                                                 <div class="pro-cart-btn mb-25">
                                                     <button class="t-y-btn" type="submit">Купить</button>
@@ -439,15 +531,14 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <div class="row">
                         <div class="col-xxl-12">
                             <div class="product__details-des-tab mb-40 mt-110">
                                 <ul class="nav nav-tabs" id="productDesTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                      <button class="nav-link active" id="des-tab" data-bs-toggle="tab" data-bs-target="#des" type="button" role="tab" aria-controls="des" aria-selected="true">Описаниее</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#option" type="button" role="tab" aria-controls="review" aria-selected="false">Характеристики</button>
+                                      <button class="nav-link active" id="des-tab" data-bs-toggle="tab" data-bs-target="#des" type="button" role="tab" aria-controls="des" aria-selected="true">Описание</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#doc" type="button" role="tab" aria-controls="review" aria-selected="false">Файлы и документы</button>
