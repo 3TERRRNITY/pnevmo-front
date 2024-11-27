@@ -1,0 +1,44 @@
+#catalog_menu {
+    display: none;
+}
+.catalog_container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    left: 0;
+    top: 250px;
+    z-index: 1000;
+
+}
+.catalog_column {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    column-count: 3;
+    column-gap: 20px;
+    column-width: 150px;
+}
+.catalog_column > div {
+    padding: 5px;
+}
+
+.catalog_container {
+    display: flex;
+}
+.menu {
+    flex-basis: 30%;
+}
+.column_container {
+    flex-basis: 70%;
+}
+
+.menu > div {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+.catalog_open {
+    display: inline-block;
+    width: 200px;
+}
