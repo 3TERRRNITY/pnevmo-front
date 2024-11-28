@@ -1,10 +1,14 @@
 #catalog_menu {
     display: none;
 }
+.no-scroll {
+    overflow: hidden;
+}
 .catalog_container {
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
     background-color: #fff;
     left: 0;
     top: 250px;
@@ -17,6 +21,9 @@
     column-count: 3;
     column-gap: 20px;
     column-width: 150px;
+    height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .catalog_column > div {
     padding: 5px;

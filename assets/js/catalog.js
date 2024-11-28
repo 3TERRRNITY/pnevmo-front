@@ -39,6 +39,8 @@ const hover = {
                 this.currentElement.style.color = "white"
                 this.currentElement.style.background = "#21327a"
                 submenuChildren[index].style.display = 'grid'
+
+
             }, this.time);
         }
     },
@@ -65,6 +67,42 @@ document.addEventListener("DOMContentLoaded", () => {
     const catalogMenu = document.getElementById('catalog_menu');
 
     catalogButton.addEventListener('click', () => {
-        catalogMenu.style.display = (catalogMenu.style.display === 'flex') ? 'none' : 'flex';
+        const isMenuOpen = catalogMenu.style.display === 'flex';
+
+        catalogMenu.style.display = isMenuOpen ? 'none' : 'flex';
+
+        if (isMenuOpen) {
+            document.body.classList.remove('no-scroll');
+        } else {
+            document.body.classList.add('no-scroll');
+        }
+    });
+
+    // Найти все контейнеры и кнопки
+    const containers = document.querySelectorAll('.categories_container');
+    const buttons = document.querySelectorAll('.show_more_btn');
+
+    containers.forEach((container, index) => {
+        const items = Array.from(container.querySelectorAll('a'));
+        const button = buttons[index];
+        const maxVisibleItems = 5;
+
+        if (items.length > maxVisibleItems) {
+            items.slice(maxVisibleItems).forEach(item => (item.style.display = 'none'));
+            button.style.display = 'block';
+
+            let isExpanded = false;
+
+            button.addEventListener('click', () => {
+                if (isExpanded) {
+                    items.slice(maxVisibleItems).forEach(item => (item.style.display = 'none'));
+                    button.textContent = 'Еще';
+                } else {
+                    items.forEach(item => (item.style.display = 'block'));
+                    button.textContent = 'Скрыть';
+                }
+                isExpanded = !isExpanded;
+            });
+        }
     });
 });
